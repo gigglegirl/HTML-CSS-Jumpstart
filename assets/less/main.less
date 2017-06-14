@@ -1,156 +1,6 @@
-.header{
-  list-style-type: none;
-  background-color: #333;
-  overflow: hidden;           /*yet to understand the use */
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-
-}
-
-.header li{
-    color:white;
-    float: right;
-    padding:15px;
-
-}
-.header li a span{
-    background-color: rgba(0, 153, 153, 0.72);
-    position: absolute;
-    border-radius: 40px;
-    height: 21px;
-    width: 21px;
-    padding-top: 2px;
-    top: 2px;
-    padding-left: 5px;
-
-}
-.menu li+li:before{
-  content: "\003E";
-  padding:15px;
-}
-
-.sidebar{
-  list-style-type: none;
-  background-color: #333;
-  margin: 0px;
-  padding: 0px;
-
-}
-
-.sidebar-details{
-   max-width: 4.33%;
-
-}
-
-.sidebar li{
-    color:white;
-    padding: 20px;
-}
-
-.menu{
-  list-style-type: none;
-  background-color: white;
-  overflow: hidden;           /*yet to understand the use */
-  margin: 0px;
-  padding: 0px;
-
-}
-
-.menu-details{
-  min-width: 95.66%;
-
-}
-.menu li {
-    color: black;
-    float: left;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 24px;
-}
-.menu li.menu-action-button {
-  float: right;
-  margin-right: 15px;
-}
-.menu li.menu-action-button button{
-  padding: 5px;
-  width: 70px;
-  background-color: white;
-  border: 1px solid black;
-}
-.menu li.menu-action-button button i {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  border: solid black;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-bottom: 2px;
-  margin-left: 4px;
-} 
-ul.projects{
-  list-style-type: none;
-  background-color: white;
-  margin-right: 17px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding: 0px;
-  position: relative;
-
-}
-.projects li {
-    color:rgba(0, 153, 153, 0.72);
-    padding: 10px;
-
-}
-.projects li.active {
-    background-color: whitesmoke;
-
-}
-.projects li.projects-header{
-    color: rgba(0, 153, 153, 0.72);
-    padding-bottom: 14px;
-    font-size: 20px;
-    border-bottom: 1px solid grey;
-
-}
-.projects li span{
-    background-color: #ddd;
-    position: absolute;
-    border-radius: 40px;
-    height: 19px;
-    color: white;
-    width: 19px;
-    padding-top: 2px;
-    right: 20px;
-    padding-left: 6px;
-    font-size: 12px;
-
-}
-.projects li.projects-header button{
-    color: white;
-    background-color: rgba(0, 153, 153, 0.72);
-    border-radius: 26px;
-    margin-left: 53px;
-    border: 0px;
-    width: 36px;
-    height: 24px;
-
-
-}
-.row:after{
-    content: "";      /*inserts content as blank after each row*/
-    clear:both;       /*clears all space on left and right each of row*/  
-    display: table; /*all elements inside row will behave as table elements*/
-}
-
-* {
-    box-sizing: border-box;     /* it gives padding and border inside the width and height of the element*/
-}
-
 [class*="col-"]{
     float: left;
-    border: 1px solid red;
+    
 }
 
 .col-1 {width: 8.33%;}
@@ -166,99 +16,259 @@ ul.projects{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+
+
+.header{
+  list-style-type: none;
+  background-color: #333;
+  overflow: hidden;           
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+
+   li{
+     color:white;
+      float: right;
+      padding-bottom:0px;
+      padding-left:15px;
+      padding-right:15px;
+      padding-top:10px;
+        a span{
+            background-color: rgba(0, 153, 153, 0.72);
+            position: absolute;
+            border-radius: 40px;
+            height: 21px;
+            width: 21px;
+            padding-top: 2px;
+            top: 2px;
+            padding-left: 5px;
+            }
+        label{
+            float: right;
+            padding-left: 9px;
+            margin-bottom: 0px;
+            margin-top: 7px;
+        } 
+        div{
+            display: inline-block;
+        }    
+     }
+}
+.menu li+li:before{
+  content: "\003E";
+  padding:15px;
+}
+
+.sidebar{
+  list-style-type: none;
+  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+   li{
+      color:white;
+      padding: 20px;
+   }
+
+}
+
+.sidebar-details{
+   max-width: 4.33%;
+
+}
+
+.menu{
+  list-style-type: none;
+  background-color: white;
+  overflow: hidden;          
+  margin: 0px;
+  padding: 0px;
+    li {
+          color: black;
+          float: left;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          margin-left: 24px;
+      }
+      li.menu-action-button {
+          float: right;
+          margin-right: 15px;
+          button{
+                  padding: 5px;
+                  width: 70px;
+                  background-color: white;
+                  border: 1px solid black;
+                    i {
+                          transform: rotate(45deg);
+                          -webkit-transform: rotate(45deg);
+                          border: solid black;
+                          border-width: 0 1px 1px 0;
+                          display: inline-block;
+                          padding: 3px;
+                          margin-bottom: 2px;
+                          margin-left: 4px;
+                        } 
+                }
+          }
+
+}
+
+.menu-details{
+  min-width: 95.66%;
+
+}
+
+.projects{
+  list-style-type: none;
+  background-color: white;
+  margin-right: 17px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  position: relative;
+   li {
+        color:rgba(0, 153, 153, 0.72);
+        padding: 10px;
+
+    }
+    li.active {
+        background-color: whitesmoke;
+
+    }
+    li.projects-header{
+            color: rgba(0, 153, 153, 0.72);
+            padding-bottom: 14px;
+            font-size: 20px;
+            border-bottom: 1px solid grey;
+            button{
+                    color: white;
+                    background-color: rgba(0, 153, 153, 0.72);
+                    border-radius: 26px;
+                    margin-left: 53px;
+                    border: 0px;
+                    width: 36px;
+                    height: 24px;
+                }
+        }
+    li span{
+        background-color: #ddd;
+        position: absolute;
+        border-radius: 40px;
+        height: 19px;
+        color: white;
+        width: 19px;
+        padding-top: 2px;
+        right: 20px;
+        padding-left: 6px;
+        font-size: 12px;
+
+    }    
+
+}
+.row:after{
+    content: "";      /*inserts content as blank after each row*/
+    clear:both;       /*clears all space on left and right each of row*/  
+    display: table; /*all elements inside row will behave as table elements*/
+}
+
+* {
+    box-sizing: border-box;     /* it gives padding and border inside the width and height of the element*/
+}
+
 .content{
   background-color: white;
   margin-left: 0px;
   padding-left: 13px;
   padding-right: 10px;
 }
-ul.slider-details{
+.slider-details{
   list-style-type: none;
   padding: 0px;
+  li{
+      border-left: 3px solid green;
+
+    }
 
 }
-li.slider-items{
-  border-left: 3px solid green;
 
-}
 .slider-items-details{
     background-color: #e6f0ff;
     margin-bottom: 15px;
     padding-left: 7px;
+     .image-detail{
+              width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            margin: 4px 8px;
+        }
+        p.redesign{
+            margin: 10px;
+          }
+      .text-description{
+            margin: 0px;
+          }
+      .date-details{
+          margin: 9px 0px;
+        } 
 }
-/*.slider-items-details span img{
-    width:30px ;
-    height:30px;
-    border-radius:30px ;
-    margin:10px;
-   
-} 
-.slider-items-details span{
-    float: right;
-    padding-right: 113px;
-    padding-top: 15px;
-   
-} */
 
 .tune-website{
   list-style-type: none;
   padding: 0px;
   overflow: hidden;
+  li strong{
+          color: #009999;
+        }
+  li button{
+          width: 85px;
+          margin-right: 17px;
+          height: 27px;
+          text-transform: uppercase;
+          border: 0px;
+          background-color: rgba(0, 153, 153, 0.72);
+          border-radius: 38px;
+          color: white;
 
-}
-.tune-website li strong{
-  color: #009999;
-}
-.tune-website li button{
-    width: 85px;
-    margin-right: 17px;
-    height: 27px;
-    text-transform: uppercase;
-    border: 0px;
-    background-color: rgba(0, 153, 153, 0.72);
-    border-radius: 38px;
-    color: white;
+      }      
+   li i.arrow-down{
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          margin-bottom: 2px;
+          margin-left: 4px;
 
-}
-
-.tune-website li i.arrow-down{
-     transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-     border: solid white;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-bottom: 2px;
-  margin-left: 4px;
+        }   
 
 }
 .user-details{
   list-style-type: none;
   padding: 0px;
   overflow: hidden;
+   li input[type=text]{
+            width: 95%;
+            margin: 10px;
+            padding: 10px;
 
-}
-.user-details li input[type=text]{
-  width: 95%;
-  margin: 10px;
-  padding: 10px;
+          }
+     li textarea{
+          width: 95%;
+          margin: 10px;
+          padding: 10px;
 
-}
-.user-details li textarea{
-  width: 95%;
-  margin: 10px;
-  padding: 10px;
+        }   
+     li input[type=button]{
+          float: right;
+          margin: 18px;
+          color: white;
+          background-color: #009999;
+          border: 0px;
+          border-radius: 42px;
+          height: 35px;
+          width: 107px;
 
-}
-.user-details li input[type=button]{
-  float: right;
-  margin: 18px;
-  color: white;
-  background-color: #009999;
-  border: 0px;
-  border-radius: 42px;
-  height: 35px;
-  width: 107px;
+        }      
 
 }
 .comments{
@@ -282,18 +292,30 @@ li.slider-items{
     padding: 3px 6px;
     color: white;
 }
-.image-detail{
-      width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    margin: 4px 8px;
+.profile-widget{
+    max-width:85px;
+   img{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        margin: 4px 12px;
+    }
 }
-.redesign{
-  margin: 10px;
+.user-name{
+  font-size:18px;
 }
-.text-redesign{
-  margin: 0px;
+.complete-button{
+    float: right;
+    padding: 6px 12px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
-.date-redesign{
-  margin: 9px 0px;
-} 
+.edit-button{
+    margin: 0px 10px;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 13px;
+    width: 44px;
+}
