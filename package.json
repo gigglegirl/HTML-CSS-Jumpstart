@@ -1,0 +1,32 @@
+{
+  "name": "Assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^4.0.0-alpha.6",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-rev": "~0.1.0",
+    "grunt-usemin": "~2.0.2",
+    "jshint-stylish": "^2.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
