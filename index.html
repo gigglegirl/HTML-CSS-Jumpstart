@@ -10,13 +10,13 @@
 	
     
 </head>
-<body style="background-color: #ddd">
+<body>
   <div>
       <ul class="header"> 
-         <li><a><i class="fa fa-car"></i></a></li>
+         <li><a><i class="fa fa-list"></i></a></li>
          <li>
-           <div><img src="./images/koala.jpg" alt="Avatar" style="width:30px ; height:30px;border-radius:30px ;display: inline-block;"></div>
-           <label>Nick</label>
+           <div><img src="./images/Penguins.jpg" class="header-profile"></div>
+           <label>Nick<i class ="arrow-down"></i></label>
          </li>
          <li><a><span>5</span><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
          <li><a><span>6</span><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
@@ -27,7 +27,7 @@
   <div class="row"> 
    <div class="col-1 sidebar-details">
       <ul class="sidebar"> 
-         <li><a><i class="fa fa-search" aria-hidden="true"></i></a></li>
+         <li><a><i class="fa fa-bars" aria-hidden="true"></i></a></li>
          <li><a><i class="fa fa-home" aria-hidden="true"></i></a></li>
          <li><a><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
          <li><a><i class="fa fa-folder" aria-hidden="true"></i></a></li>
@@ -48,31 +48,32 @@
          <span><li class="menu-action-button"><button>Actions<i class="arrow-down"></i></button></li></span>
        </ul>
 
-       <div style="margin: 24px;">
+       <div class="details-data">
            <div class="row">
                    <div class="col-2">
                       <ul class="projects"> 
-                           <li class="projects-header"><a>Projects</a><button><i class="fa fa-cog" aria-hidden="true"></i></button></li>
+                           <li class="projects-header"><a>PROJECTS</a><button><i class="fa fa-cog" aria-hidden="true"></i></button></li>
                            <li ><a >AirAsia</a><span>5</span></li>
                            <li><a >HSBC Promo</a><span>2</span></li>
                            <li class="active"><a >Global Ex System</a><span>9</span></li>
                            <li><a >Empire City</a><span>4</span></li>
                            <li><a >Air Asia Adds</a><span>7</span></li>
+                           <li><a >Air Asia com</a><span>7</span></li>
                       </ul>
                   </div>
                   <div class="col-10 content" >
                           <ul class="tune-website"> 
-                               <li style="float: left">PROJECT : <strong>TUNE WEBSITE</strong></li>
+                               <li>PROJECT : <strong>TUNE WEBSITE</strong></li>
                                <li style="float: right"><button>MANAGE<i class="arrow-down"></i></button></li>
                           </ul>
-                          <div class="row">
+                          <div class="row project-name">
                               <div class="col-4">
                                   <ul class="slider-details"> 
                                      <li>
                                         <div class="card slider-items-details"> 
                                             <div class="row">
                                                <div class="col-2">
-                                                  <img src="./images/koala.jpg" alt="Avatar" class="image-detail">
+                                                  <img src="./images/Penguins.jpg" alt="Avatar" class="image-detail">
                                                </div>
                                                <div class="col-10">
                                                   <p class="redesign"><strong>Slider Redesign</strong></p>
@@ -96,10 +97,10 @@
                                         <div class="card slider-items-details"> 
                                             <div class="row">
                                                <div class="col-2">
-                                                  <img src="./images/koala.jpg" alt="Avatar" class="image-detail">
+                                                  <img src="./images/Penguins.jpg" alt="Avatar" class="image-detail">
                                                </div>
                                                <div class="col-10">
-                                                  <p class="redesign"><strong>Slider Redesign</strong></p>
+                                                  <p class="redesign"><strong>Home Page Alignments to adjust</strong></p>
                                                </div>
                                             </div>
 
@@ -120,7 +121,7 @@
                                         <div class="card slider-items-details"> 
                                             <div class="row">
                                                <div class="col-2">
-                                                  <img src="./images/koala.jpg" alt="Avatar" class="image-detail">
+                                                  <img src="./images/Penguins.jpg" alt="Avatar" class="image-detail">
                                                </div>
                                                <div class="col-10">
                                                   <p class="redesign"><strong>Slider Redesign</strong></p>
@@ -145,7 +146,7 @@
                             <div class="col-8"> 
                                <div class="row">
                                  <div class="col-2 profile-widget">
-                                    <img src="./images/koala.jpg" alt="Avatar">
+                                    <img src="./images/Penguins.jpg" alt="Avatar">
                                  </div>
                                  <div class="col-10 user-name">
                                     <p>
@@ -156,32 +157,30 @@
                                <div class="row">
                                  <div class="col-12">
                                    <ul class="user-details"> 
-                                   <li><input type="text" placeholder="Task Title"> </input></li>
-                                   <li><textarea rows="8" cols="50" placeholder="Task Description"></textarea></li>
-                                   <li><input type="text" placeholder="Due Date"></input></li>
-                                   <li><input type="text" placeholder="Due Date"></input></li>
-                                   <li><input type="button" value="Cancel"></input></li>
-                                   <li><input type="button" value="Save Changes"></input></li>
-                                </ul>
+                                       <li><input type="text" placeholder="Task Title"></li>
+                                       <li><textarea rows="8" cols="50" placeholder="Task Description"></textarea></li>
+                                       <li><input type="text" placeholder="Due Date"><span class="fa fa-calendar cal-span" aria-hidden="true"></span></li>
+                                       <li><input type="text"><span><button class="status-pending">Pending</button><button class="status-request">Requested</button></span></li>
+                                       <li><input type="button" class="cancel" value="Cancel"></li>
+                                       <li><input type="button" class="save-data" value="Save Changes"></li>
+                                   </ul>
                                  </div>
-                                 
                                </div>
-                                <!-- <ul class="user-details"> 
-                                   <li><img src="./images/koala.jpg" alt="Avatar" style="width:40px ;height: 40px; border-radius:40px ; margin:10px;"><span>vanessa Bond</span>
-                                   <input type="button"  value="edit" style="background-color: white"></li>
-                                   <li><input type="text" placeholder="Task Title"> </input></li>
-                                   <li><textarea rows="8" cols="50" placeholder="Task Description"></textarea></li>
-                                   <li><input type="text" placeholder="Due Date"></input></li>
-                                   <li><input type="text" placeholder="Due Date"></input></li>
-                                   <li><input type="button" value="Cancel"></input></li>
-                                   <li><input type="button" value="Save Changes"></input></li>
-                                </ul> -->
                                   <div class="comments"> 
-                                   <a class="comment-details">Comments </a>
-                                   <a class="history">History </a>
+                                       <a class="comment-details">Comments </a>
+                                       <a class="history">History </a>
                                   </div>
                                   <div class="detail-text"> 
-                                   Laxmi singh
+                                       <div class="row">
+                                          <div class="col-1">
+                                            <img src="./images/Penguins.jpg" class="detail-text-profile-pic">
+                                          </div>
+                                          <div class="col-11">
+                                            <p class="detail-user-login">Kristina<span>17 sept 2014 at 2:05pm</span></p>
+                                            <p>cras sas unmm itk kiyh dge tdjdgd gin miu eur daiierg lorem eschui reilaoty kim jim chim hum gyum chum </p>
+
+                                          </div>
+                                       </div>
                                   </div>
                             </div>
                           </div>

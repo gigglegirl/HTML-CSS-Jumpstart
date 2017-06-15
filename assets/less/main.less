@@ -1,6 +1,9 @@
+body{
+  background-color: #ddd;
+  color: #2F3133;
+}
 [class*="col-"]{
     float: left;
-    
 }
 
 .col-1 {width: 8.33%;}
@@ -25,6 +28,13 @@
   margin: 0px;
   padding: 0px;
   position: relative;
+
+   .header-profile{
+      width:30px ;
+      height:30px;
+      border-radius:30px ;
+      display: inline-block;
+     }
 
    li{
      color:white;
@@ -51,7 +61,17 @@
         } 
         div{
             display: inline-block;
-        }    
+        } 
+         label i{
+           transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          border: solid white;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 2px;
+          margin-bottom: 2px;
+          margin-left: 4px;
+        }   
      }
 }
 .menu li+li:before{
@@ -83,7 +103,6 @@
   margin: 0px;
   padding: 0px;
     li {
-          color: black;
           float: left;
           margin-top: 8px;
           margin-bottom: 8px;
@@ -96,14 +115,14 @@
                   padding: 5px;
                   width: 70px;
                   background-color: white;
-                  border: 1px solid black;
+                  border: 1px solid #2F3133;
                     i {
                           transform: rotate(45deg);
                           -webkit-transform: rotate(45deg);
-                          border: solid black;
+                          border: solid #2F3133;
                           border-width: 0 1px 1px 0;
                           display: inline-block;
-                          padding: 3px;
+                          padding: 2px;
                           margin-bottom: 2px;
                           margin-left: 4px;
                         } 
@@ -116,7 +135,9 @@
   min-width: 95.66%;
 
 }
-
+.details-data{
+   margin:24px;
+}
 .projects{
   list-style-type: none;
   background-color: white;
@@ -135,15 +156,16 @@
 
     }
     li.projects-header{
-            color: rgba(0, 153, 153, 0.72);
-            padding-bottom: 14px;
-            font-size: 20px;
-            border-bottom: 1px solid grey;
+            color: rgba(0,153,153,0.72);
+            padding-bottom: 19px;
+            font-size: 18px;
+            border-bottom: 1px solid #e6e6e6;
+            padding-top: 14px;
             button{
                     color: white;
                     background-color: rgba(0, 153, 153, 0.72);
                     border-radius: 26px;
-                    margin-left: 53px;
+                    margin-left: 34px;
                     border: 0px;
                     width: 36px;
                     height: 24px;
@@ -179,19 +201,22 @@
   margin-left: 0px;
   padding-left: 13px;
   padding-right: 10px;
+   .project-name{
+       border-top: 1px solid #e6e6e6;
+   }
 }
 .slider-details{
   list-style-type: none;
   padding: 0px;
   li{
-      border-left: 3px solid green;
+      border-left: 2px solid rgba(0,153,153,0.72);
 
     }
 
 }
 
 .slider-items-details{
-    background-color: #e6f0ff;
+    background-color: #F0F8FF;
     margin-bottom: 15px;
     padding-left: 7px;
      .image-detail{
@@ -202,12 +227,15 @@
         }
         p.redesign{
             margin: 10px;
+            color: rgba(0, 0, 0, 0.65);
           }
       .text-description{
             margin: 0px;
+            color: rgba(47, 49, 51, 0.51);
           }
       .date-details{
           margin: 9px 0px;
+          color: rgba(47, 49, 51, 0.51);
         } 
 }
 
@@ -215,6 +243,12 @@
   list-style-type: none;
   padding: 0px;
   overflow: hidden;
+  li:first-child{
+    float:left;
+  }
+  li:last-child{
+   float:right;
+  }
   li strong{
           color: #009999;
         }
@@ -232,11 +266,11 @@
    li i.arrow-down{
           transform: rotate(45deg);
           -webkit-transform: rotate(45deg);
-          border: solid white;
+          border: solid #e6e6e6;
           border-width: 0 1px 1px 0;
           display: inline-block;
-          padding: 3px;
-          margin-bottom: 2px;
+          padding: 2px;
+          margin-bottom: 4px;
           margin-left: 4px;
 
         }   
@@ -246,21 +280,23 @@
   list-style-type: none;
   padding: 0px;
   overflow: hidden;
+  margin-bottom:0px;
    li input[type=text]{
             width: 95%;
             margin: 10px;
-            padding: 10px;
+            padding:10px 30px;
+            border: 1px solid #e6e6e6;
 
           }
      li textarea{
           width: 95%;
           margin: 10px;
-          padding: 10px;
-
+          padding-left:30px;
+          border: 1px solid #e6e6e6;
         }   
-     li input[type=button]{
+     li .save-data{
           float: right;
-          margin: 18px;
+          margin: 10px;
           color: white;
           background-color: #009999;
           border: 0px;
@@ -268,24 +304,89 @@
           height: 35px;
           width: 107px;
 
-        }      
+        }
+      li .cancel{
+              float: right;
+                margin-top:10px;
+                margin-right:18px;
+                margin-left: 0px;
+                margin-right: 18px;
+                background-color: white;
+                border: 1px solid #e6e6e6;
+                border-radius: 42px;
+                height: 35px;
+                width: 69px;
+
+        }  
+      li span.cal-span{
+              float: left;
+              margin-left: 23px;
+              margin-top: -37px;
+              position: relative;
+              z-index: 2;
+
+        }   
+      li span button.status-pending{
+          float: left;
+          margin-left: 23px;
+          margin-top: -40px;
+          position: relative;
+          z-index: 2;
+          padding: 4px 8px;
+          background-color: white;
+          border: 1px solid #e6e6e6;
+
+      }  
+      li span button:before{
+          content:'\0058';
+          padding-right:5px;
+          font-size:11px;
+
+      }  
+      li span button.status-request{
+          float: right;
+          margin-top: -40px;
+          position: relative;
+          z-index: 2;
+          padding: 4px 8px;
+          margin-right: 460px;
+          background-color: white;
+          border: 1px solid #e6e6e6;
+
+      }     
 
 }
 .comments{
-  padding: 16px;
   margin: 20px;
 }
 
 .comment-details{
-  padding: 16px;
-    margin: 8px;
+    padding: 10px;
     border-bottom: 2px solid red;
 }
 .history{
   padding: 28px;
 }
 .detail-text{
-  padding-left: 15px;
+  padding-left: 15px; 
+   .detail-text-profile-pic{
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+        margin-top: 3px;
+        margin-right: 0px;
+
+   }
+    .detail-user-login{
+          margin-top: 8px;
+           span{
+            font-size:14px;
+            padding:10px;
+           }
+    }
+    .p{
+          margin-top: 0px;
+    }
 }
 .detail-button{
   border: 0px;
@@ -308,14 +409,14 @@
     float: right;
     padding: 6px 12px;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid #2F3133;
     border-radius: 20px;
 }
 .edit-button{
     margin: 0px 10px;
     padding: 4px;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #2F3133;
     border-radius: 13px;
     width: 44px;
 }
