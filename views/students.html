@@ -1,0 +1,13 @@
+
+  <div>
+  	<h2>List Of students</h2>
+  </div> 
+  Name: <input type="text" name="" ng-model="name" ng-show="flag">
+  {{name}}
+  <div ng-repeat = "student in students">
+  	 <ul>
+  	 	<li>
+  	 		<a ui-sref="studentParent.studentDetails({id:student.id})">{{student.name}}</a>
+  	 	</li>
+  	 </ul>
+  </div>

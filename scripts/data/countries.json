@@ -1,0 +1,27 @@
+[
+{
+"countryCode": "EG",
+"countryName": "Egypt",
+"region": "Africa"
+},
+{
+"countryCode": "IN",
+"countryName": "India",
+"region": "ASIA"
+},
+{
+"countryCode": "PA",
+"countryName": "Pakistan",
+"region": "ASIA"
+},
+{
+"countryCode": "USA",
+"countryName": "United States",
+"region": "North"
+},
+{
+"countryCode": "UK",
+"countryName": "United kingdom",
+"region": "North"
+}
+]
